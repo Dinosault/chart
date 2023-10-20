@@ -25,17 +25,19 @@ export class HistogramComponent {
   @ViewChild("chart") chart! : ChartComponent;
   public chartOptions: Partial<ChartOptions>;
 
+  yaxis: number[] = [10, 41, 35, 51, 49, 62, 69, 91, 148];
   constructor() {
+    
     this.chartOptions = {
       series: [
         {
           name: "My-series",
-          data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+          data: this.yaxis
         }
       ],
       chart: {
         height: 350,
-        type: "bar"
+        type: "line"
       },
       title: {
         text: "My First Angular Chart"
@@ -45,5 +47,4 @@ export class HistogramComponent {
       }
     };
   } 
-
 }
