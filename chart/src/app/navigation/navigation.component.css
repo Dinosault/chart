@@ -13,16 +13,19 @@
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 12;
 }
 
 .dashboard {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
 .componentcontainer{
   display: flex;
-  flex: 0 0 33%;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 0 32%;
 }
