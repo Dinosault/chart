@@ -17,12 +17,21 @@ import { HistogramComponent } from './histogram/histogram.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgApexchartsModule } from 'ng-apexcharts';
+import { HttpClientModule } from '@angular/common/http';
+import { Chart2Component } from './chart2/chart2.component';
+import { Chart3Component } from './chart3/chart3.component';
+import { Chart4Component } from './chart4/chart4.component';
+import { Chart5Component } from './chart5/chart5.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     HistogramComponent,
+    Chart2Component,
+    Chart3Component,
+    Chart4Component,
+    Chart5Component,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +47,8 @@ import { NgApexchartsModule } from 'ng-apexcharts';
     MatButtonModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

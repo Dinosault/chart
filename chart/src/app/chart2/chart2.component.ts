@@ -16,16 +16,15 @@ export type ChartOptions = {
 };
 
 @Component({
-  selector: 'app-histogram',
-  templateUrl: './histogram.component.html',
-  styleUrls: ['./histogram.component.css']
+  selector: 'app-chart2',
+  templateUrl: './chart2.component.html',
+  styleUrls: ['./chart2.component.css']
 })
+export class Chart2Component implements OnInit{
 
-export class HistogramComponent implements OnInit{
   data: any;
   @ViewChild("chart") chart! : ChartComponent;
   public chartOptions: Partial<ChartOptions>;
-
   yaxis: number[] = [10, 41, 35, 51, 49, 62, 69, 91, 148];
 
   constructor(
@@ -41,7 +40,7 @@ export class HistogramComponent implements OnInit{
       ],
       chart: {
         height: 350,
-        type: "line",
+        type: "area",
         toolbar: {
           show: true,
         }
@@ -51,11 +50,8 @@ export class HistogramComponent implements OnInit{
       },
       xaxis: {
         categories: ["Jan", "Feb",  "Mar",  "Apr",  "May",  "Jun",  "Jul",  "Aug", "Sep"]
-      }
+      },
     };
-
   }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 }
