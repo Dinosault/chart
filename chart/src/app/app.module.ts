@@ -23,6 +23,7 @@ import { Chart3Component } from './chart3/chart3.component';
 import { Chart4Component } from './chart4/chart4.component';
 import { Chart5Component } from './chart5/chart5.component';
 import { Chart6Component } from './chart6/chart6.component';
+import { AnimationsComponent } from './animations/animations.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { Chart6Component } from './chart6/chart6.component';
     Chart4Component,
     Chart5Component,
     Chart6Component,
+    AnimationsComponent,
   ],
   imports: [
     BrowserModule,
