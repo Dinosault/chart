@@ -1,0 +1,68 @@
+/* HeroesComponent's private CSS styles */
+table {
+    width: 100%;
+}
+
+.equipments {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+}
+
+.equipments li {
+    display: flex;
+}
+
+.equipments button {
+    display: flex;
+    flex: 1;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #eee;
+    margin: 0.5em;
+    padding: 0;
+    border-radius: 4px;
+    align-items: stretch;
+    height: 3em;
+}
+
+.equipments button:hover {
+    color: #2c3a41;
+    background-color: #e6e6e6;
+    left: 0.1em;
+}
+
+.equipments button:active {
+    background-color: #525252;
+    color: #fafafa;
+}
+
+.equipments button.selected {
+    background-color: black;
+    color: white;
+}
+
+.equipments button.selected:hover {
+    background-color: #505050;
+    color: white;
+}
+
+.equipments button.selected:active {
+    background-color: black;
+    color: white;
+}
+
+.equipments .id {
+    display: flex;
+    color: white;
+    padding: 0.8em 0.7em 0.7em 0.7em;
+    background-color: #405061;
+    margin-right: 0.4em;
+    border-radius: 2px 0 0 2px;
+}
+
+.equipments .name {
+    align-self: center;
+}

@@ -1,0 +1,46 @@
+<div id="creatRoleBord">
+    <form [formGroup]="roleAttributeForm">
+        <div id="roleStateBord">
+            <p id="bordtitle">CreateRoleBord</p>
+            <mat-form-field style="padding: 0 0.75em;">
+                <mat-label for="name">Name: </mat-label>
+                <input matInput placeholder="Your Name" formControlName="name">
+            </mat-form-field>
+            <div style="display: flex;">
+                <div class="roleOption">
+                    <mat-form-field>
+                        <mat-label for="strengthControl">Strength: </mat-label>
+                        <input matInput type="number" min="0" max="10" formControlName="strengthControl">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <mat-label for="dexterityControl">Dexterity: </mat-label>
+                        <input matInput type="number" min="0" max="10" formControlName="dexterityControl">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <mat-label for="constitutionControl">Constitution: </mat-label>
+                        <input matInput type="number" min="0" max="10" formControlName="constitutionControl">
+                    </mat-form-field>
+                </div>
+                <div class="roleOption">
+                    <mat-form-field>
+                        <mat-label for="intelligenceControl">Intelligence: </mat-label>
+                        <input matInput type="number" min="0" max="10" formControlName="intelligenceControl">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <mat-label for="wisdomControl">Wisdom: </mat-label>
+                        <input matInput type="number" min="0" max="10" formControlName="wisdomControl">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <mat-label for="charismaControl">Charisma: </mat-label>
+                        <input matInput type="number" min="0" max="10" formControlName="charismaControl">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div id="formbutton">
+                <button mat-flat-button (click)="updateRoleAttribute()">Send Attribute</button>
+            </div>
+        </div>
+    </form>
+    <!-- 角色雷達圖 -->
+    <app-roleradarchart [roleAttribute]="roleAttributeForm"></app-roleradarchart>
+</div>
